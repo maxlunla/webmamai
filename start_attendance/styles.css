@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
+html, body {
+	font-family: 'Kanit', sans-serif;
+	height: 100%;
+	margin: 0;
+}
+.navbar{
+	background-image: url("nav.png");
+	height: 80px;
+}
+
+.logo{
+	width: 70px;
+	height: 70px;
+}
+.btn{
+	background-color: #F2E0DF !important;
+	border-color: #F2E0DF !important;
+	border-radius: 30px;
+}
+.btn_ins1{
+	background-color: #D7523F !important;
+	border-color: #D7523F !important;
+	border-radius: 30px;
+	width: 40vh;
+	height: 30vh;
+}
+.btn_ins2{
+	background-color: #DE853F !important;
+	border-color: #DE853F !important;
+	border-radius: 30px;
+	width: 40vh;
+	height: 30vh;
+}
+.btn_ins3{
+	background-color: #FBD272 !important;
+	border-color: #FBD272 !important;
+	border-radius: 30px;
+	width: 40vh;
+	height: 30vh;
+}
+.btn_ins4{
+	background-color: #1F8764 !important;
+	border-color: #1F8764 !important;
+	border-radius: 30px;
+	width: 40vh;
+	height: 30vh;
+}
+.btn_ins5{
+	background-color: #516E90 !important;
+	border-color: #516E90 !important;
+	border-radius: 30px;
+	width: 40vh;
+	height: 30vh;
+}
+.btn_ins6{
+	background-color: #6D4981 !important;
+	border-color: #6D4981 !important;
+	border-radius: 30px;
+	width: 40vh;
+	height: 30vh;
+}
+.btn_logout {
+	color: #DD8F78 !important;
+}
+
+#footer{
+	background-color: #5B5754;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+#divfooter{
+	background-color: #5B5754!important;
+}
+p1{
+	color: #F9F9F9;
+}
+
+.create{
+	width: 100%;
+	height: 88%;
+	background-color: #F2E0DF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.div1{
+	background-color: white;
+	width: 85%;
+	height: 80%;
+	border-radius: 20px;
+	padding: 20px;
+}
+h1{
+	font-weight: bold;
+}
+
+.box1 {
+	width: 100vh;
+	height: 40vh;
+	background-color: red;
+	border-radius: 10%;
+}

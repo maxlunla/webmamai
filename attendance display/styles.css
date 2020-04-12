@@ -15,16 +15,12 @@ html, body {
 	height: 70px;
 }
 .btn{
-	background-color: #F2E0DF !important; 
-	border-color: #F2E0DF !important;
-	border-radius: 30px;
-	color: #DD8F78 !important;
-}
-.btn_ins{
 	background-color: #F2E0DF !important;
 	border-color: #F2E0DF !important;
 	border-radius: 30px;
-	width: 15%;
+}
+.btn_logout {
+	color: #DD8F78 !important;
 }
 
 #footer{
@@ -59,9 +55,24 @@ p1{
 h1{
 	font-weight: bold;
 }
-.btn_color {
-	background-color: #DD8F78 !important; 
-	border-color: #F2E0DF !important;
-	border-radius: 30px;
+
+.box1 {
+	width: 100vh;
+	height: 40vh;
+	background-color: red;
+	border-radius: 10%;
+}
+
+.icon_checked {
+	width: 20%;
+	height: 20%;
+}
+
+.check {
+	text-align: center;
+	color: #DD8F78 !important;
+}
+.btn2 {
 	color: #F2E0DF !important;
+	background-color: #DD8F78 !important;
 }
