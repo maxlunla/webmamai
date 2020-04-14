@@ -28,27 +28,27 @@
 		<div class="container div1">
 			<div class="container div2">
 				<h1>My Classroom</h1><br>
-					<div class="row">
-						<i class="fa fa-circle col-1"></i>
-						<label class="col-7" for="ISAD">06016306 INFORMATION SYSTEM ANALYSIS AND DESIGN</label>
-						<div class="col-2"></div>
-						<i class="fa fa-trash col-2"></i>
-					</div>
-					<br>
-					<div class="row">
-						<i class="fa fa-circle col-1"></i>
-						<label class="col-7" for="ISAD">06016347 FUNDAMENTALS OF DIGITAL STORYTELLING AND CINEMATOGRAPHY</label>
-						<div class="col-2"></div>
-						<i class="fa fa-trash col-2"></i>
-					</div>
-					<br>
+				<div class="row">
+					<i class="fa fa-circle col-1"></i>
+					<label class="col-7" for="ISAD">06016306 INFORMATION SYSTEM ANALYSIS AND DESIGN</label>
+					<div class="col-2"></div>
+					<i class="fa fa-trash col-2"></i>
+				</div>
+				<br>
+				<div class="row">
+					<i class="fa fa-circle col-1"></i>
+					<label class="col-7" for="ISAD">06016347 FUNDAMENTALS OF DIGITAL STORYTELLING AND CINEMATOGRAPHY</label>
+					<div class="col-2"></div>
+					<i class="fa fa-trash col-2"></i>
+				</div>
+				<br>
 
-					<!-- Added more class this line -->
+				<!-- Added more class this line -->
 
-					<div class="row">
-						<i class="fa fa-plus-square col-1"></i>
-						<label class="col-7" for="ISAD"><b><u>Create new classroom</u></b></label>
-					</div>
+				<div class="row">
+					<i class="fa fa-plus-square col-1"></i>
+					<label class="col-7" for="ISAD" id="myBtn"><b><u>Create new classroom</u></b></label>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -61,5 +61,65 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+			</div>
+			<div class="modal-body">
+				<div class="container mb-3">
+					<form action="#">
+						<div class="form-group mt-1">
+							<label for="usernmae">Classroom Name: </label>
+							<input class="form-control" type="text" id="classroomname" name="classroomname">
+						</div>
+						<div class="form-group mt-1">
+							<label for="usernmae">Classroom ID: </label>
+							<input class="form-control" type="text" id="classid" name="classid">
+						</div>
+						<div class="form-group">
+							<label for="pwd">Password: </label>
+							<input class="form-control" type="password" id="pwd" name="pwd">
+						</div>
+						<div class="row">
+							<button class="btn btn-light mx-auto my-2 my-sm-0 mr-3" type="submit" id="createbtn">Create</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<script>
+	// Get the modal
+	var modal = document.getElementById("myModal");
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+		modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+</script>
 </body>
 </html>
