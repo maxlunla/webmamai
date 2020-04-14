@@ -68,3 +68,7 @@ h1{
 	color: #DD8F78 !important;
 	border-color: #DD8F78 !important;
 }
+
+.table #myTable, tr, th {
+	border: 1px solid black;
+}

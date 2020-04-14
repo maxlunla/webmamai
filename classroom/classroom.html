@@ -43,7 +43,15 @@
 
 				<!-- Place database table -->
 				<div class="col"></div>
-				<div class="history_box col-6">Database Box here</div>
+				<div class="history_box col-8 container">
+					<table class="table" id="myTable">
+						<tr>
+							<th>Student Id</th>
+							<th>Name</th>
+
+						</tr>
+					</table>
+				</div>
 				<div class="col"></div>
 				
 				<div class="row">
@@ -63,5 +71,34 @@
 			</div>
 		</div>
 	</div>
+
+
+	<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+	<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+	    apiKey: "AIzaSyClxZjTXnp7jCwyLsOoZ_qvOAk7oiWloFk",
+	    authDomain: "webmamai.firebaseapp.com",
+	    databaseURL: "https://webmamai.firebaseio.com",
+	    projectId: "webmamai",
+	    storageBucket: "webmamai.appspot.com",
+	    messagingSenderId: "451924545526",
+	    appId: "1:451924545526:web:e926916780a257f05c41d7",
+	    measurementId: "G-JTMTC8NN2E"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	</script>
+	<!--script src="/__/firebase/init.js"></script-->
+	<script src="Classroom_db.js" charset="uft-8"></script>
 </body>
 </html>
