@@ -25,9 +25,9 @@
 				<fieldset class="form-group">
 					<div class="row">
 						<legend class="col-form-label col-sm-2 pt-0">Create As   :</legend>
-						<button class="btn btn-light my-2 my-sm-0 mr-3" type="submit" onclick="Studentfrom()" id="btnstu">Student</button>
+						<button class="btn btn-light my-2 my-sm-0 mr-3" onclick="Studentfrom()" id="btnstu">Student</button>
 						<a class="mt-1 mr-3">or</a>
-						<button class="btn btn-light my-2 my-sm-0 mr-3" type="submit" onclick="Teacherfrom()" id="btntea">Teacher</button>
+						<button class="btn btn-light my-2 my-sm-0 mr-3" onclick="Teacherfrom()" id="btntea">Teacher</button>
 					</div>
 				</fieldset>
 				<!-- Student form -->
@@ -62,6 +62,9 @@
 							<input  class="form-control" id="inputLastnameS" name="student_lname" placeholder="กรุณาใส่นามสกุล">
 						</div>
 					</div>
+					<div class="row ">
+						<button class="btn btn-light mx-auto my-2 my-sm-0 mr-3" name="studentbutton" type="submit">Create Account</button>
+					</div>
 				</form>
 				<!-- Teacher form -->
 				<form id="Teacherfrom">
@@ -89,10 +92,13 @@
 							<input  class="form-control" id="inputLastnameT" name="teacher_lname" placeholder="กรุณาใส่นามสกุล">
 						</div>
 					</div>
+					<div class="row ">
+						<button class="btn btn-light mx-auto my-2 my-sm-0 mr-3" name="teacherbutton" type="submit">Create Account</button>
+					</div>
 				</form>
-				<div class="row ">
+				<!--div class="row ">
 					<button class="btn btn-light mx-auto my-2 my-sm-0 mr-3" type="submit">Create Account</button>
-				</div>
+				</div-->
 			</div>
 		</div>
 	</div>
@@ -117,12 +123,15 @@
 			  document.getElementById("btntea").style.color = "red";
 		}
 	</script>
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
 
-	<!-- TODO: Add SDKs for Firebase products that you want to use
-	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
 	<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
 
 	<script>
 	  // Your web app's Firebase configuration
@@ -140,6 +149,7 @@
 	  firebase.initializeApp(firebaseConfig);
 	  firebase.analytics();
 	</script>
+	<!--script src="/__/firebase/init.js"></script-->
 	<script src="CreateAccount_db.js" charset="uft-8"></script>
 </body>
 </html>
